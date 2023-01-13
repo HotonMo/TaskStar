@@ -12,7 +12,9 @@ struct TasksModel : Identifiable , Codable {
     let TaskName: String
     let  CheckTask :Bool
     let id : String
-    let date = Date()
+
+  
+    
     
     // Not repetaed current data
     init(TaskName: String, CheckTask: Bool, id: String = UUID().uuidString) {
@@ -24,4 +26,7 @@ struct TasksModel : Identifiable , Codable {
     func UpdateTaskModel() -> TasksModel{
         return TasksModel(TaskName: TaskName, CheckTask: !CheckTask, id: id)
     }
+    
+
+    
 }

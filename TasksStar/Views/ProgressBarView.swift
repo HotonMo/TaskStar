@@ -7,50 +7,40 @@
 
 import SwiftUI
 
-struct ProgressBarBackground: View {
-
-    let total: Int = 5 
+struct ProgressBar: View {
+    
+    let total: Int = 5
+    let completed: Int
     @State var lineWidth: CGFloat = 16
-            var body: some View {
-                GeometryReader { geometry in
-                    Circle()
-                        .stroke(Color(white: 230/255),
-                                style: StrokeStyle(
-                                    lineWidth: lineWidth / 1.6
-                  )  )
-                }
-            }
-        }
 
-
-
-        struct ProgressBarView: View {
-            let total: Int = 5
-            let completed: Int
-            @State var lineWidth: CGFloat = 16
-            @State var color: Color = .green
-            var body: some View {
+    var body: some View {
+        ZStack{
                 Circle()
-                    .trim(from: 0, to: CGFloat(completed)/CGFloat(total))
-                    .stroke(color,
+                    .stroke(Color(white: 230/255),
                             style: StrokeStyle(
-                                lineWidth: lineWidth,
-                                lineCap: .round
-                            ))
-                    .rotationEffect(.degrees(-90))
-            }
-        }
+                                lineWidth: lineWidth / 1.6
+                            )  )
+            Circle()
+                .trim(from: 0, to: CGFloat(completed)/CGFloat(total))
+                .stroke(Color.green,
+                        style: StrokeStyle(
+                            lineWidth: lineWidth,
+                            lineCap: .round
+                        ))
+                .rotationEffect(.degrees(-90))
+            
+            Text("\(completed) / \(total)")
+        }.frame(width: 300, height: 300)
+            .font(.system(size: 50))
+      
+    }
+}
 
 
-        struct CircularProgressBarProgressView_Previews: PreviewProvider {
-            static var previews: some View {
-                Group {
-                    ZStack{
-                        ProgressBarBackground()
-                        ProgressBarView(completed: 3)
-                    }
-                    ProgressBarView(completed: 4)
-                    ProgressBarView(completed: 6)
-                }
-            }
+
+    struct CircularProgressBarProgressView_Previews: PreviewProvider {
+        static var previews: some View {
+                    ProgressBar(completed: 3)
+
         }
+    }

@@ -12,10 +12,11 @@
 		5D01B771296D853F00EA5203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D01B770296D853F00EA5203 /* Preview Assets.xcassets */; };
 		5D01B781296EB1BE00EA5203 /* TasksPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01B780296EB1BE00EA5203 /* TasksPageView.swift */; };
 		5D01B785296F4FBD00EA5203 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01B784296F4FBD00EA5203 /* TasksModel.swift */; };
-		5D01B787296F535A00EA5203 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01B786296F535A00EA5203 /* TasksView.swift */; };
+		5D01B787296F535A00EA5203 /* TasksCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01B786296F535A00EA5203 /* TasksCardsView.swift */; };
 		5D01B78B296F5AAB00EA5203 /* TasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01B78A296F5AAB00EA5203 /* TasksViewModel.swift */; };
 		5D01B78D296F6DBE00EA5203 /* Modifaiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01B78C296F6DBE00EA5203 /* Modifaiers.swift */; };
 		5DBC8B54296F947700C15A0B /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC8B53296F947700C15A0B /* ProgressBarView.swift */; };
+		5DE6A5ED2971FE59001244A0 /* ColorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6A5EC2971FE59001244A0 /* ColorsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +26,11 @@
 		5D01B770296D853F00EA5203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D01B780296EB1BE00EA5203 /* TasksPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksPageView.swift; sourceTree = "<group>"; };
 		5D01B784296F4FBD00EA5203 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
-		5D01B786296F535A00EA5203 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		5D01B786296F535A00EA5203 /* TasksCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCardsView.swift; sourceTree = "<group>"; };
 		5D01B78A296F5AAB00EA5203 /* TasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewModel.swift; sourceTree = "<group>"; };
 		5D01B78C296F6DBE00EA5203 /* Modifaiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifaiers.swift; sourceTree = "<group>"; };
 		5DBC8B53296F947700C15A0B /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		5DE6A5EC2971FE59001244A0 /* ColorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 			children = (
 				5D01B769296D853E00EA5203 /* TasksStarApp.swift */,
 				5D01B780296EB1BE00EA5203 /* TasksPageView.swift */,
-				5D01B786296F535A00EA5203 /* TasksView.swift */,
+				5D01B786296F535A00EA5203 /* TasksCardsView.swift */,
 				5DBC8B53296F947700C15A0B /* ProgressBarView.swift */,
 			);
 			path = Views;
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5D01B78A296F5AAB00EA5203 /* TasksViewModel.swift */,
+				5DE6A5EC2971FE59001244A0 /* ColorsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -184,12 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D01B787296F535A00EA5203 /* TasksView.swift in Sources */,
+				5D01B787296F535A00EA5203 /* TasksCardsView.swift in Sources */,
 				5D01B78B296F5AAB00EA5203 /* TasksViewModel.swift in Sources */,
 				5D01B781296EB1BE00EA5203 /* TasksPageView.swift in Sources */,
 				5D01B78D296F6DBE00EA5203 /* Modifaiers.swift in Sources */,
 				5D01B785296F4FBD00EA5203 /* TasksModel.swift in Sources */,
 				5D01B76A296D853E00EA5203 /* TasksStarApp.swift in Sources */,
+				5DE6A5ED2971FE59001244A0 /* ColorsViewModel.swift in Sources */,
 				5DBC8B54296F947700C15A0B /* ProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
