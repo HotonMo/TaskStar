@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct TasksStarApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    @StateObject var taskViewModel : TasksViewModel = TasksViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            NavigationStack{
+                TasksPageView()
+            }.environmentObject(taskViewModel)
         }
     }
 }
