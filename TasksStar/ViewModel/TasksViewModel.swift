@@ -11,14 +11,15 @@ import SwiftUI
 class TasksViewModel : ObservableObject {
     @AppStorage("Stars") var stars = 0
     @AppStorage("progress") var ProgressBarValue = 0
-    let TasksKey : String = "List_Of_Tasks"
-    
-    @Published var TaskList : [TasksModel] = [
-        TasksModel(TaskName: "Brushing My teeth in the morning ", CheckTask: false),
-        TasksModel(TaskName: "Cleaning My room", CheckTask: false),
-        TasksModel(TaskName: "Eating My meal", CheckTask: false),
-        TasksModel(TaskName: "Helping My Parents", CheckTask: false),
-        TasksModel(TaskName: "Brushing My teeth before sleep", CheckTask: false)]
+    let TasksKey : String = "List4"
+
+   @Published var TaskList : [TasksModel] = [
+    TasksModel(TaskName: "Brushing My teeth in the morning", CheckTask: false),
+    TasksModel(TaskName: "Cleaning My room", CheckTask: false),
+    TasksModel(TaskName: "Eating My meal", CheckTask: false),
+    TasksModel(TaskName: "Helping My Parents", CheckTask: false),
+    TasksModel(TaskName: "Brushing My teeth before sleep", CheckTask: false)
+    ]
     {
         didSet {saveTasks()} // if any update happended this will called
     }
@@ -27,7 +28,7 @@ class TasksViewModel : ObservableObject {
     
     init() {
         getTasks()
-        
+       // AddData()
     }
     
     
@@ -80,5 +81,23 @@ class TasksViewModel : ObservableObject {
     }
     
     
+    func AddData(){
+        
+        let task1 = NSLocalizedString("Brushing My teeth in the morning", comment: "")
+        let task2 = NSLocalizedString("Cleaning My room", comment: "")
+        let task3 = NSLocalizedString("Eating My meal", comment: "")
+        let task4 = NSLocalizedString("Helping My Parents", comment: "")
+        let task5 = NSLocalizedString("Brushing My teeth before sleep", comment: "")
+ 
+       let tasks = [
+    TasksModel(TaskName: task1, CheckTask: false),
+    TasksModel(TaskName: task2, CheckTask: false),
+    TasksModel(TaskName: task3, CheckTask: false),
+    TasksModel(TaskName: task4, CheckTask: false),
+    TasksModel(TaskName: task5, CheckTask: false)
+       ]
+        
+        TaskList.append(contentsOf: tasks)
     
+    }
 }

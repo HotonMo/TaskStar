@@ -1,0 +1,25 @@
+/*
+  Localizable.strings
+  TaskStar
+
+  Created by amalghurm on 18/06/1444 AH.
+  
+*/
+" Welcome what is your name ?" = "مرحبا ماهو اسمك ؟";
+"Name"="الاسم";
+"Next"="التالي";
+"Star"="نجمه";
+"My Tasks"="مهماتي";
+"My Achivment"="إنجازاتي";
+"Task Star Certificate"="شهاده نجم المهمه";
+"Presented to:"="مقدمه الى:";
+"Congratulations"="مبرووووك";
+"for successfully"="لإستطاعتك الحصول بنجاح على";
+"collecting"="على مجموع";
+"Keep Going"="تابع تقدمك";
+"+ 10 Stars"="+ ١٠ نجمات";
+"task1"="تفريش اسناني في الصباح";
+"task2"="تنظيف غرفتي";
+"task3"="تناول طعامي";
+"task4"="مساعدة امي وابي";
+"task5"="تفريش اسناني قبل النوم";

@@ -18,7 +18,7 @@ struct MainCardView: View {
                 .frame(width: 450, height: 330)
             Spacer()
             VStack{
-                Text("Keep Goining")
+                Text("Keep Going")
                     .font(.system(size: 40, weight: .bold, design: .default))
                     ProgressBar(completed: taskViewModel.ProgressBarValue)
             }.padding()

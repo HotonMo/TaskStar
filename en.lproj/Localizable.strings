@@ -1,0 +1,27 @@
+/*
+  Localizable.strings
+  TaskStar
+
+  Created by amalghurm on 18/06/1444 AH.
+  
+*/
+" Welcome what is your name ?" =" Welcome what is your name ?";
+"Name"="Name";
+"Next"="Next";
+"Star"="Star";
+"My Tasks"="My Tasks";
+"My Achivment"="My Achivment";
+"Task Star Certificate"="Task Star Certificate";
+"Presented to:"="Presented to:";
+"Congratulations"="Congratulations";
+"for successfully"="for successfully";
+"collecting"="collecting";
+"Keep Going"="Keep Going";
+"task1"="Brushing My teeth in the morning";
+"task2"="Cleaning My room";
+"task3"="Eating My meal";
+"task4"="Helping My Parents";
+"task5"="Brushing My teeth before sleep";
+
+
+

@@ -14,9 +14,10 @@ struct TasksStarApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                TasksPageView()
-            }.environmentObject(taskViewModel)
+            EnterPage()
+//            NavigationStack{
+//                TasksPageView()
+//            }.environmentObject(taskViewModel)
         }
     }
 }
